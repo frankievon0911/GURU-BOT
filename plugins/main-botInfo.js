@@ -62,7 +62,7 @@ let infobt = `
 ▢ WhatsApp :
   • +255757917366
 ▢ whatsapp : 
-  • https://chat.whatsapp.com/IuxiuLAzbeY1uPgNhAiYhk
+  • https://chat.whatsapp.com/FYprbFhvWSiIak8FbCpVGV
 
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
