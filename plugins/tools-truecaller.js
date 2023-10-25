@@ -1,5 +1,5 @@
-//GURU-BOT
-/*import fetch from 'node-fetch';
+GURU-BOT
+*import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text }) => {
   if (!text) throw 'Please provide a phone number.';
@@ -21,7 +21,7 @@ let handler = async (m, { conn, text }) => {
     let data = json.data[0];
 
     // Add custom property.
-    data.creator = 'GURU';
+    data.creator = 'frankmontana';
 
     let response = '';
 
