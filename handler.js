@@ -137,16 +137,16 @@ export async function handler(chatUpdate) {
                 if (!("detect" in chat)) chat.detect = false
                 if (!("getmsg" in chat)) chat.getmsg = true
                 if (!("isBanned" in chat)) chat.isBanned = false
-                if (!("nsfw" in chat)) chat.nsfw = false
+                if (!("nsfw" in chat)) chat.nsfw = true
                 if (!("sBye" in chat)) chat.sBye = ""
                 if (!("sDemote" in chat)) chat.sDemote = ""
                 if (!("simi" in chat)) chat.simi = false
                 if (!("sPromote" in chat)) chat.sPromote = ""
                 if (!("sWelcome" in chat)) chat.sWelcome = ""
-                if (!("useDocument" in chat)) chat.useDocument = false
+                if (!("useDocument" in chat)) chat.useDocument = true
                 if (!("viewOnce" in chat)) chat.viewOnce = false
-                if (!("viewStory" in chat)) chat.viewStory = false
-                if (!("welcome" in chat)) chat.welcome = false
+                if (!("viewStory" in chat)) chat.viewStory = true
+                if (!("welcome" in chat)) chat.welcome = true
                 if (!("chatbot" in chat)) chat.chatbot = false
                 if (!isNumber(chat.expired)) chat.expired = 0
             } else
@@ -168,8 +168,8 @@ export async function handler(chatUpdate) {
                     sWelcome: "",
                     useDocument: false,
                     viewOnce: false,
-                    viewStory: false,
-                    welcome: false,
+                    viewStory: true,
+                    welcome: true,
                     chatbot: false
                 }
           
@@ -573,10 +573,10 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ",
+                        title: "montana bot",
                         body: "welcome to Group",
                         thumbnailUrl: welcomeApiUrl,
-                        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                        sourceUrl: 'https://chat.whatsapp.com/IuxiuLAzbeY1uPgNhAiYhk',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
@@ -598,8 +598,8 @@ export async function participantsUpdate({
                   ppgp = await this.profilePictureUrl(id, 'image');
                 } catch (error) {
                   console.error(`Error retrieving profile picture: ${error}`);
-                  pp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
-                  ppgp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
+                  pp = 'https://telegra.ph/file/bfd8af6fd1f25e10cffc6.jpg'; // Assign default image URL
+                  ppgp = 'https://telegra.ph/file/bfd8af6fd1f25e10cffc6.jpg'; // Assign default image URL
                 } finally {
                   let text = (chat.sBye || this.bye || conn.bye || 'HELLO, @user')
                     .replace('@user', '@' + user.split('@')[0]);
@@ -626,10 +626,10 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ",
+                        title: "montana bot",
                         body: "Goodbye from  Group",
                         thumbnailUrl: leaveApiUrl,
-                        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                        sourceUrl: 'https://chat.whatsapp.com/IuxiuLAzbeY1uPgNhAiYhk',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
