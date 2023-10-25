@@ -53,9 +53,9 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
   handler.tags = ['nsfw']
 handler.command = ['xvid'];
 handler.group = true;
-handler.premium = false;
+handler.premium = true;
 handler.register = true;
 
-handler.premium = false;
+handler.premium = true;
 
 export default handler;
