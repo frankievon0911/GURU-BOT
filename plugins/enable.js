@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
   let user = global.db.data.users[m.sender]
   let bot = global.db.data.settings[conn.user.jid] || {}
   let type = (args[0] || '').toLowerCase()
-  let isAll = false, isUser = false
+  let isAll = true, isUser = true
   switch (type) {
     case 'welcome':
       if (!m.isGroup) {
@@ -28,7 +28,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn)
            throw false
-          }}
+          }} by
       chat.jarvis = isEnable
      break
 	case 'pmblocker':
